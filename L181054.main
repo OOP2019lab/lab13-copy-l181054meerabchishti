@@ -1,0 +1,33 @@
+#include<iostream>
+#include"min_max.h"
+using namespace std;
+//Exercise 1(b)
+//int main () 
+//{
+//  int i=5, j=6, k;
+//  long l=10, m=5, n;
+//  k=GetMax(i,j);//these two lines work with and without type specifier
+//  n=GetMin(l,m);
+//  cout << k << endl;
+//  cout << n << endl;
+//  return 0;
+//}
+//int main () 
+//{
+//  char i='Z';
+//  int  j=6, k;
+//  long l=10, m=5, n;
+//  k=GetMax <int,long> (i,m);//error without type specifier
+//  n=GetMin<int,char>(j,l);
+//  cout << k << endl;
+//  cout << n << endl;
+//  return 0;
+//}
+int main () 
+{
+	Pair <double> myobject (1.012, 1.01234);
+	cout<<myobject.GetMax()<<endl;
+	cout<<myobject.GetMin()<<endl;
+	cout<<myobject<<endl; // << operator in pairs should be overloaded (inline)
+	return 0;
+}
